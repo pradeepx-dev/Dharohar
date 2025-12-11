@@ -1,6 +1,7 @@
 # Dharohar - Student Project Showcase
 
-![Dharohar Banner](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop)
+<img width="3192" height="1656" alt="image" src="https://github.com/user-attachments/assets/720d519a-7c25-426a-b615-4723feb776c3" />
+
 <!-- Replace with actual banner if available -->
 
 **Dharohar** is a modern, responsive web application designed for students to showcase their academic and personal projects. It serves as a central hub where innovation meets community, allowing users to discover, share, and interact with projects across various domains.
