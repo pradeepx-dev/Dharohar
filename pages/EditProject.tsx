@@ -7,6 +7,7 @@ import { ProjectCategory } from '../types';
 import { Button } from '../components/UI/Button';
 import { Upload, X, ArrowLeft } from 'lucide-react';
 import { useToast } from '../context/ToastContext';
+import { convertImageToWebP } from '../utils/imageUtils';
 
 const EditProject: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -93,11 +94,14 @@ const EditProject: React.FC = () => {
       let imageUrl = formData.imageUrl;
       if (imageFile) {
           try {
+            // Convert image to WebP before uploading
+            const webpImage = await convertImageToWebP(imageFile);
+
             const timeoutPromise = new Promise<string>((_, reject) => {
               setTimeout(() => reject(new Error("Upload timed out")), 10000);
             });
 
-            imageUrl = await Promise.race([uploadImage(imageFile), timeoutPromise]);
+            imageUrl = await Promise.race([uploadImage(webpImage), timeoutPromise]);
           } catch (uploadError: any) {
             console.error("Image upload issue:", uploadError);
             if (uploadError.message === "Upload timed out") {

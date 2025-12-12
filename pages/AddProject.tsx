@@ -7,6 +7,7 @@ import { ProjectCategory } from '../types';
 import { Button } from '../components/UI/Button';
 import { Upload, X, ArrowLeft } from 'lucide-react';
 import { useToast } from '../context/ToastContext';
+import { convertImageToWebP } from '../utils/imageUtils';
 
 const AddProject: React.FC = () => {
   const { currentUser } = useAuth();
@@ -66,13 +67,16 @@ const AddProject: React.FC = () => {
       let imageUrl = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"; // Default Placeholder
       
       try {
+        // Convert image to WebP before uploading
+        const webpImage = await convertImageToWebP(imageFile);
+
         // Create a timeout promise that rejects after 20 seconds
         const timeoutPromise = new Promise<string>((_, reject) => {
           setTimeout(() => reject(new Error("Upload timed out")), 10000);
         });
 
         // Race the upload against the timeout
-        imageUrl = await Promise.race([uploadImage(imageFile), timeoutPromise]);
+        imageUrl = await Promise.race([uploadImage(webpImage), timeoutPromise]);
         
       } catch (uploadError: any) {
         console.error("Image upload issue:", uploadError);
