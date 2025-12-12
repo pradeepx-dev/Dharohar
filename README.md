@@ -1,6 +1,7 @@
 # Dharohar - Student Project Showcase
 
-<img width="3192" height="1656" alt="image" src="https://github.com/user-attachments/assets/720d519a-7c25-426a-b615-4723feb776c3" />
+<img width="3166" height="1651" alt="image" src="https://github.com/user-attachments/assets/1149d87a-285a-45b2-b5da-f3e203313869" />
+
 
 <!-- Replace with actual banner if available -->
 
