@@ -19,7 +19,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/5 dark:bg-white/10 text-slate-600 dark:text-slate-300 font-medium text-sm mb-8 backdrop-blur-sm border border-slate-200 dark:border-white/10">
                 <Rocket size={14} className="text-primary-500" />
-                <span>An Initiative by RJIT Incubation Center</span>
+                <span>An Initiative by Developer</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white mb-8 tracking-tight leading-[1.1]">
@@ -121,7 +121,7 @@ const About: React.FC = () => {
                     
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
                         Created & Managed by <br />
-                        <span className="text-primary-600 dark:text-primary-500">RJIT Incubation Center</span>
+                        <span className="text-primary-600 dark:text-primary-500">pradeepx-dev</span>
                     </h2>
                     
                     <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto mb-8">
@@ -130,9 +130,9 @@ const About: React.FC = () => {
 
                     <div className="flex flex-col items-center gap-2 mb-8">
                          <span className="text-sm font-bold uppercase tracking-wider text-slate-400">Contact Us</span>
-                         <a href="mailto:incubation@rjit.ac.in" className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                         <a href="#" className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                              <Mail size={20} className="text-primary-500" />
-                             incubation@rjit.ac.in
+                             abc@mail.com
                          </a>
                     </div>
                     
@@ -141,7 +141,7 @@ const About: React.FC = () => {
             </div>
             
             <p className="mt-12 text-slate-400 dark:text-slate-600 font-medium text-sm">
-                © {new Date().getFullYear()} Dharohar • RJIT Incubation Center Initiative
+                © {new Date().getFullYear()} Dharohar •
             </p>
         </div>
 

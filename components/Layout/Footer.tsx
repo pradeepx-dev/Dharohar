@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
          <div className="flex flex-col md:flex-row items-center gap-1 mb-4 md:mb-0 text-center md:text-left">
            <span>&copy; {new Date().getFullYear()} Dharohar.</span>
            <span className="hidden md:inline">•</span>
-           <span>Built & Managed by RJIT Incubation Center.</span>
+           <span>Built & Managed by pradeep-dev.</span>
          </div>
          <div className="flex items-center gap-8">
            <Link to="/applications" className="hover:text-slate-900 dark:hover:text-white transition-colors">Discover</Link>

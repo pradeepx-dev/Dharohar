@@ -78,15 +78,7 @@ const Applications: React.FC = () => {
     <div className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#050505] transition-colors duration-300">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-10">
-          <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-orange-100 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-700/50">
-            <p className="text-sm font-semibold text-orange-700 dark:text-orange-400 flex items-center gap-2">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
-              </span>
-              In Testing Phase
-            </p>
-          </div>
+
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight">
             Explore Applications
           </h1>
